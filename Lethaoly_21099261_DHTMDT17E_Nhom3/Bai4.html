@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAOLY-Bai4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        *{box-sizing: border-box;}
+.bai4{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 200px;
+    background-image: linear-gradient(180deg,rgb(4, 252, 252) 0%, pink );
+}
+.bai4-container{
+    width: 500px;
+    height: fit-content;
+    background: rgb(238,174,202);
+    background: linear-gradient(to bottom right, rgb(128, 249, 253) 55%, pink 45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    border-radius: 10px;
+}
+.bai4-form i{
+    position: absolute;
+}
+.bai4-form >i{
+    padding: 17px;
+    min-width: 40px;
+}
+.bai4-input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.bt-bai4{
+    width: 190px;
+    height: 40px;
+    margin: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+.bai4-button{
+    margin: 10px;
+}
+.bai4-button2{
+    padding: 10px;
+    background-color: rgb(127, 255, 240);
+    margin: 10px;
+    border-radius: 10px;
+}
+    </style>
+  <h3 class="name">Bài 4</h3>
+<div class="bai4">
+    <div class="bai4-container">
+        <h1>Log In</h1>
+        <p>Login here using your username and password</p>
+        <form action="" class="bai4-form">
+            <input type="text" id="bai4-username" class="bai4-input" placeholder="👤   UserName"><br>
+            <input type="password" id="bai4-password" class="bai4-input" placeholder="🔑   Password">
+        </form>
+        <div class ="bai4-button2">
+        <span><button type="submit">Log In</button></span></div>
+        <div class="bai4-button">
+            <span><button class="bai4-button2">
+                Fogot Password
+            </button></span>
+            <span><button class="bai4-button2">
+                Sign Up 👥
+            </button></span>
+        </div>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

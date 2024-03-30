@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đánh Giá Sản Phẩm</title>
+</head>
+<body>
+    <style>
+        .layout1-container {
+        background: #d14c4c;
+        padding: 5px;
+        text-align: center;
+        margin: auto;
+        font-family:'Courier New', Courier, monospace;
+}
+</style>
+<div class = "layout1-container">
+    <h1>Đánh Giá Sản Phẩm</h1>
+
+    <form method="POST" action="submit_review.php">
+        <strong><label for="name">Tên:</label></strong>
+        <input type="text" id="name" name="name" required><br><br><br>
+
+       <strong> <label for="rating">Đánh Giá:</label></strong>
+        <select id="rating" name="rating" required>
+            <option value="5">5 sao</option>
+            <option value="4">4 sao</option>
+            <option value="3">3 sao</option>
+            <option value="2">2 sao</option>
+            <option value="1">1 sao</option>
+        </select><br><br><br>
+
+       <strong> <label for="review">Bài Đánh Giá:</label></strong><br><br>
+        <textarea id="review" name="review" rows="4" required></textarea><br><br><br>
+
+        <input type="submit" value="Gửi Đánh Giá">
+    </form>
+</div>
+</div>
+    </body>
+</html>
